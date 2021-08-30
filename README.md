@@ -7,8 +7,8 @@
    Оборудование: BeagleBone Black
    Эмулятор: QEMU-system-arm
 
-## Характеристики BeagleBone Black:
-   Процессор: TI AM335x 1GHz ARM Cortex-A8 Sitara SoC;
+## Характеристики BeagleBone Black rev C:
+   Процессор: TI AM3358 1GHz ARM Cortex-A8 Sitara SoC;
    ОЗУ: 512MB DDR3
    Flash: eMMC 4GB
    microSD, можно использовать как загрузочное устройство
@@ -20,4 +20,4 @@
 ## Дополнительные ресурсы
    Linux From Scratch: https://www.linuxfromscratch.org
    Widi Develop OS: https://wiki.osdev.org/Expanded_Main_Page
-
+   Linux Documentation: https://www.kernel.org/doc/html/latest/

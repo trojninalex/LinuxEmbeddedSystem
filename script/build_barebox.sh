@@ -13,6 +13,11 @@ tar xjf $PACKAGE_BAREBOX
 rm $PACKAGE_BAREBOX
 cd $BAREBOX
 
+cp ../../env/barebox/boot.mmc ./defaultenv/defaultenv-2-base/boot/mmc
+cp ../../env/barebox/boot.mmc.old ./defaultenv/defaultenv-2-base/boot/mmc.old
+cp ../../env/barebox/boot.sdcard ./defaultenv/defaultenv-2-base/boot/sdcard
+cp ../../env/barebox/nv.boot.default ./defaultenv/defaultenv-2-base/nv/boot.default
+
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make am335x_mlo_defconfig 
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make omap_defconfig

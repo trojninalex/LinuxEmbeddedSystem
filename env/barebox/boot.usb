@@ -1,0 +1,6 @@
+#!/bin/sh
+
+global.bootm.image=/mnt/disk0.0/boot/zImage
+global.bootm.oftree=/mnt/disk0.0/boot/am335x-boneblack.dtb
+#global.bootm.initrd=
+global.linux.bootargs.dyn.root="root=/dev/sda0 rootfstype=ext4 rw rootwait"

@@ -14,7 +14,7 @@ rm $PACKAGE_BAREBOX
 cd $BAREBOX
 
 cp ../../env/barebox/boot.mmc ./defaultenv/defaultenv-2-base/boot/mmc
-cp ../../env/barebox/boot.mmc.old ./defaultenv/defaultenv-2-base/boot/mmc.old
+cp ../../env/barebox/boot.usb ./defaultenv/defaultenv-2-base/boot/usb
 cp ../../env/barebox/boot.sdcard ./defaultenv/defaultenv-2-base/boot/sdcard
 cp ../../env/barebox/nv.boot.default ./defaultenv/defaultenv-2-base/nv/boot.default
 

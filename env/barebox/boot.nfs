@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ifup eth0
+mount -t nfs server_ip:/path/to/rootfs /mnt/nfs
+
+global.bootm.image=/mnt/nfs/boot/zImage
+global.bootm.oftree=/mnt/nfs/boot/am335x-boneblack.dtb
+#global.bootm.initrd=
+global.linux.bootargs.dyn.root="root=/dev/nfs rw nfsroot=server_ip:/path/to/rootfs,nolock,vers=4,tcp ip=dhcp:server_ip"

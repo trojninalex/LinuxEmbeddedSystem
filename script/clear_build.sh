@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd ../build/
-rm -Rf ./*
+sudo rm -Rf ./*

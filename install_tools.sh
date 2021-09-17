@@ -1,7 +1,7 @@
 #! /bin/sh
 
 printf "\nInstall Cross Develop Tools\n" 
-sudo apt install crossbuild-essential-armel crossbuild-essential-armhf crossbuild-essential-arm64 bison flex libssl-dev 
+sudo apt install crossbuild-essential-armel crossbuild-essential-armhf crossbuild-essential-arm64 gcc-arm-none-eabi bison flex libssl-dev gawk
 
 printf "\nInstall Develop Application\n"
 sudo apt install emacs-nox git lynx

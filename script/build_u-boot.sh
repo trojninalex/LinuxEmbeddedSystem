@@ -1,5 +1,6 @@
-#!/bin/sh
+#!/bin/env bash
 
+source envfs.sh
 source package.sh
 source url_package.sh
 
@@ -13,5 +14,7 @@ tar xjf $PACKAGE_UBOOT
 rm $PACKAGE_UBOOT
 cd $UBOOT
 
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make am335x_evm_defconfig 
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make am335x_evm_defconfig 
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
+cp MLO ${BOOT}/MLO
+cp u-boot.img ${BOOT}/u-boot.img

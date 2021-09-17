@@ -1,4 +1,4 @@
 #!/bin/sh
 
-BOOT=/patch/to/BOOT
-ROOTFS=/patch/to/rootfs
+BOOT=/path/to/BOOT
+ROOTFS=/path/to/rootfs

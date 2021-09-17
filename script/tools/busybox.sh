@@ -25,4 +25,4 @@ ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-   \
 make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
 
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-   \
-$(CROOS) make CONFIG_PREFIX=$ROOTFS install
+make CONFIG_PREFIX=$ROOTFS install

@@ -3,7 +3,7 @@
 ## Книга
    Название: Встраиваемые системы на основе Linux  
    Автор: Крис Симмондс  
-   HOST system: Debian 11 amd64  
+   BUILD system: Debian 11 amd64  
    Оборудование: BeagleBone Black  
    Эмулятор: QEMU-system-arm  
 

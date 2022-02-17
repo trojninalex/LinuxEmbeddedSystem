@@ -19,7 +19,7 @@ ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j $(grep 'cpu cores' /proc/cpu
 make ARCH=arm dtbs
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}') modules
 
-cp arch/arm/boot/zImage ${ROOTFS}/boot/
-cp arch/arm/boot/dts/am335x-boneblack.dtb ${ROOTFS}/boot/
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}') INSTALL_MOD_PATH=${ROOTFS} modules_install
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make headers_install INSTALL_HDR_PATH=${ROOTFS}/usr
+sudo cp arch/arm/boot/zImage ${ROOTFS}/boot/
+sudo cp arch/arm/boot/dts/am335x-boneblack.dtb ${ROOTFS}/boot/
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- sudo make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}') INSTALL_MOD_PATH=${ROOTFS} modules_install
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- sudo make headers_install INSTALL_HDR_PATH=${ROOTFS}/usr

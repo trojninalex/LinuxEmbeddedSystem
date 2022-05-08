@@ -9,4 +9,6 @@ URL_GLIBC="https://ftp.gnu.org/gnu/glibc"
 URL_COREUTILS="https://ftp.gnu.org/gnu/coreutils"
 URL_BASH="https://ftp.gnu.org/gnu/bash"
 
+URL_OPENSSL="https://github.com/openssl/openssl.git"
 URL_SHADOW="https://github.com/shadow-maint/shadow.git"
+

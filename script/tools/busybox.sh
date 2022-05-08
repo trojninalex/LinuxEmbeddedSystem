@@ -21,8 +21,8 @@ ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-  \
 make menuconfig
 
 
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-   \
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-   \
 make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
 
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-   \
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-   \
 make CONFIG_PREFIX=$ROOTFS install

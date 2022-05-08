@@ -1,3 +1,5 @@
+#!/bin/env bash
+
 cd ../
 
 source envfs.sh
@@ -13,7 +15,7 @@ git pull
 
 printf "\nStart build shadow-utils\n\n"
 
-./autogen.sh --prefix=/usr --host=arm-linux-gnueabihf --without-selinux
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
+./autogen.sh --prefix=${ROOTFS} --with-sysroot=${ROOTFS} --host=arm-linux-gnueabi --without-selinux
+#ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make -j $(grep 'cpu cores' /proc/cpuinfo | uniq |  awk '{print $4}')
 printf "\nInstall!!!\n\n"
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make install DESTDIR=${ROOTFS}
+#ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- make install DESTDIR=${ROOTFS}

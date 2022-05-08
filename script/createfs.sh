@@ -2,8 +2,8 @@
 
 source envfs.sh
 
-mkdir ${BOOT}
-mkdir ${ROOTFS}
+mkdir -p ${BOOT}
+mkdir -p ${ROOTFS}
 cd ${ROOTFS}
 
 mkdir bin boot dev etc home lib media mnt opt proc root sbin sys tmp usr var

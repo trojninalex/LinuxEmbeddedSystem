@@ -27,3 +27,16 @@ OPENSSL_VER=openssl-3.0
 
 SHADOW=shadow
 SHADOW_VER=v4.11.1
+
+GCC=gcc
+GCC_VER='releases/gcc-12'
+
+GMP=gmp-6.2.1
+PACKAGE_GMP=$GMP.tar.bz2
+
+MPFR=mpfr-4.1.0
+PACKAGE_MPFR=$MPFR.tar.bz2
+
+MPC=mpc-1.2.1
+PACKAGE_MPC=$MPC.tar.gz
+

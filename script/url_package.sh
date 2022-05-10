@@ -12,3 +12,6 @@ URL_BASH="https://ftp.gnu.org/gnu/bash"
 URL_OPENSSL="https://github.com/openssl/openssl.git"
 URL_SHADOW="https://github.com/shadow-maint/shadow.git"
 
+URL_GCC="git://gcc.gnu.org/git/gcc.git"
+URL_GCC_INFRASTRUCTURE="https://gcc.gnu.org/pub/gcc/infrastructure"
+
